@@ -4,7 +4,6 @@
   <br>
 </h1>
 <p align="center">A discord bot to implement custom economy for your server! Add, remove, leaderboard, shop, etc available!</p>
-<h4 align="center"> Special Thanks to <a href="https://metagoons.gg/">MetaGoons</a> and <a href="https://twitter.com/elitejakey", target="_blank">Jakey</a> for commissioning this bot.</h4>
 
 ## ❗ Features
 * ✏️ Administrators can add or remove points 
@@ -24,10 +23,9 @@ In [config.py](https://github.com/DorianAarno/PointsBot/blob/main/config.py) rep
 **That's it, you're ready to use the bot, you may edit other parameters in config file as per your needs.**
 
 ## 📘 Other libraries used
-* [disnake-pagination](https://github.com/DorianAarno/Paginator) 
-   * [Leaderboard line 67](https://github.com/DorianAarno/PointsBot/blob/main/cogs/points_commands.py)
+* [disnake-pagination](https://github.com/DorianAarno/Paginator)
 * [discordpy-antispam](https://github.com/DorianAarno/SpamFilter) 
-   * [on_message event line 14](https://github.com/DorianAarno/PointsBot/blob/main/cogs/points_system.py)
+* Discord.py
 
  
 ## 📖 License
