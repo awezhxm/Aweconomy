@@ -2,8 +2,13 @@ from disnake import *
 from disnake.ext import commands
 import os, traceback
 from config import Token, Prefix
+import nltk
+nltk.download('words')
 
-bot = commands.Bot(case_insensitive=True, command_prefix=Prefix, intents=Intents.default())
+intents=Intents.default()
+intents.message_content=True
+
+bot = commands.Bot(case_insensitive=True, command_prefix=Prefix, intents=intents)
 
 @bot.event
 async def on_ready():
