@@ -10,8 +10,8 @@ class Help(commands.Cog):
 
     @commands.group(invoke_without_command=True, case_insensitive=True)
     async def help(self,ctx):
-        e = Embed(title=":notepad_spiral: Help Menu :notepad_spiral:", description="• Prefix is /", color=ctx.author.color)
-        e.add_field(name="Commands", value="• `/points <username>` View how many {PointsName} you or someone has.\n• `/points add <username> <number>` Supply {PointsName} to any member.*\n• `/points remove <member> <number>` Remove {PointsName} from any member.* \n• `leaderboard` `/leaderboard` See ranking of all members.\n• `/shop`: Shows the shop\n• `/shop add <price> <item-name>`: Add a item in the shop.\n• `/shop remove`: Remove a item from the shop.\n• `/shop buy`: Buy a item from the shop.\n*: These commands are admin only")
+        e = Embed(title=":notepad_spiral: Help Menu :notepad_spiral:", description=" ", color=ctx.author.color)
+        e.add_field(name="Commands", value="• `/points <username>` View how many {PointsName} you or someone has.\n• `/points add <username> <number>` Supply {PointsName} to any member.*\n• `/points remove <member> <number>` Remove {PointsName} from any member.* \n• `/leaderboard` See ranking of all members.\n• `/shop`: Shows the shop\n• `/shop add <price> <item-name>`: Add a item in the shop.\n• `/shop remove`: Remove a item from the shop.\n• `/shop buy <item-name/item-number>`: Buy a item from the shop.\n*: These commands are admin only")
         await ctx.send(embed=e)
 
 def setup(bot):
